@@ -1,14 +1,19 @@
-const http = require('http');
+const express = require('express')
+const app = express()
+const port = 3000
 
-const hostname = '127.0.0.1';
-const port = 3000;
+// Used for setting the engine to prevent error
+app.set('view engine', 'ejs');
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
+// Needed for accessing javascripts + css
+app.use(express.static(__dirname + "/public"));
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+app.get('/', (req, res) => {
+  res.render("pages/template", {
+    title:"Template"
+  })
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
