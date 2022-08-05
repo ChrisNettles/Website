@@ -3,5 +3,23 @@
     "bootstrap": "^5.2.0",
     "ejs": "^3.1.8",
     "express": "^4.18.1"
-  }
+  },
+  "name": "website",
+  "description": "",
+  "version": "1.0.0",
+  "main": "router.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisNettles/Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisNettles/Website/issues"
+  },
+  "homepage": "https://github.com/ChrisNettles/Website#readme"
 }
