@@ -1,4 +1,16 @@
+/*
 
+ A website designed to present projects and skills related to website development, including:
+ * HTML
+ * CSS
+ * EJS
+ * ExpressJS
+ * Javascript
+ * Nodejs
+ * Bootstrap
+
+
+*/
 
 const express = require('express')
 const app = express()
