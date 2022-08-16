@@ -35,8 +35,8 @@ app.use(express.static("public"));
 // Request methods: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods
 
 app.get('/', (req, res) => {
-  res.render("pages/template", {
-    title:"Template"
+  res.render("pages/home", {
+    title:"Homepage"
   })
 })
 
